@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew assembleDebug*)",
+      "Bash(scripts/status.sh)",
+      "Bash(scripts/build-apk.sh)",
+      "Bash(adb devices*)",
+      "Bash(adb shell settings get *)",
+      "Bash(adb logcat -d*)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)"
+    ],
+    "deny": [
+      "Bash(adb uninstall *)",
+      "Bash(adb reboot*)"
+    ]
+  }
+}
